@@ -5,10 +5,10 @@ set ai                      "自动缩进
 set bs=2                    "在insert模式下用退格键删除
 set showmatch               "代码匹配
 set laststatus=2            "总是显示状态行
-"这个配置强制取消tab键, 先屏蔽
 "set expandtab               "以下三个配置配合使用，设置tab和缩进空格数
 set shiftwidth=8
 set tabstop=8
+set cindent
 "set cursorline              "为光标所在行加下划线
 set number                  "显示行号
 set autoread                "文件在Vim之外修改过，自动重新读入
@@ -20,6 +20,7 @@ set hls                     "检索时高亮显示匹配项
 set helplang=cn             "帮助系统设置为中文
 set foldmethod=syntax       "代码折叠
 "}}
+colorscheme desert
 
 "conf for tabs, 为标签页进行的配置，通过ctrl h/l切换标签等
 let mapleader = ','
