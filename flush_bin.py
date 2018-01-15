@@ -1,4 +1,4 @@
-import socket
+import socket, time
 
 def ReadFile(fileName):
     dest = ('<broadcast>', 20000)
@@ -6,13 +6,14 @@ def ReadFile(fileName):
     s.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
     rf = open(fileName, 'rb')
     while True:
+        time.sleep(0.0001)
         rBuf = rf.read(1024)
         if rBuf != "":
-            #print rBuf
             s.sendto(rBuf, dest)
         else:
             break
     print "finish ReadFile"
     rf.close()
+    s.close()
 
 ReadFile("a.bin")
