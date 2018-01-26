@@ -7,6 +7,7 @@
 	lgdo = log --decorate --oneline
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	ci = commit
+	co = checkout
 [user]
 	email = tristan_xiao@qq.com
 	name = tristan_xiao
