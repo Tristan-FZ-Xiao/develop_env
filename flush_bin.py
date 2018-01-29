@@ -18,4 +18,6 @@ def ReadFile(fileName):
     rf.close()
     s.close()
 
+os.system("tar -czvf aaa.tar.gz aaa")
+os.system("mv aaa.tar.gz a.bin")
 ReadFile("a.bin")
