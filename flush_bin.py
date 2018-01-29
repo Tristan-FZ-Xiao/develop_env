@@ -11,6 +11,8 @@ def ReadFile(fileName):
         if rBuf != "":
             s.sendto(rBuf, dest)
         else:
+            rBuf = "qltxcxbb"
+            s.sendto(rBuf, dest)
             break
     print "finish ReadFile"
     rf.close()
